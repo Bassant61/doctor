@@ -8,6 +8,7 @@ import 'core/routing/routes.dart';
 
 class DocApp extends StatelessWidget {
   final AppRouter appRouter;
+
   const DocApp({super.key, required this.appRouter});
 
   @override
@@ -18,7 +19,7 @@ class DocApp extends StatelessWidget {
       child: MaterialApp(
         theme: ThemeData(
           primaryColor: AppColors.primary,
-          scaffoldBackgroundColor: Colors.white
+          scaffoldBackgroundColor: Colors.white,
         ),
         debugShowCheckedModeBanner: false,
         initialRoute: Routes.onBoardingScreen,
